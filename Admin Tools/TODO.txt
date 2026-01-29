@@ -1,0 +1,5 @@
+Replace c# wrapper with python wrapper that can launch the bat scripts.
+Add a way to check for admin permission and give a warning if run without it saying some commands may not work.
+Add src folder for the python embedded env. 
+Separate admin tools 1 folder from admin tools 3.0.0 on GitHub and put it in its own repo. 
+Mark repo as archived.
