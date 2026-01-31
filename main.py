@@ -1,5 +1,7 @@
 import subprocess
 from pathlib import Path
+import os
+os.system("title Admin Tools")
 
 ROOT = Path(__file__).parent
 TOOLS_DIR = ROOT / "Admin Tools" / "tools"
