@@ -35,17 +35,9 @@ for %%F in (%TEMP%\*.*) do (
 echo Cleaning Windows Update leftovers...
 Dism /Online /Cleanup-Image /StartComponentCleanup
 
-echo Removing device driver packages...
-pnputil /enum-drivers > drivers.txt
-for /F "tokens=1 delims=:" %%d in ('findstr /C:"Published Name" drivers.txt') do (
-    pnputil /delete-driver %%d /uninstall /force
-)
-
-echo Removing drivers.txt...
-del /f /q "drivers.txt"
-
 echo Clearing all temp folders...
 del /q/f/s "%TEMP%\*"
 del /q/f/s "%SystemRoot%\Temp\*"
+
 
 echo All done! Reboot for best results.
