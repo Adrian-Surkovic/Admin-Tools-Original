@@ -2,15 +2,7 @@
 
 Easily modifiable admin tools covering everything from system, rig, and network information to diagnostics and repair.
 
----
-
-## **General Notes**
-- **All C# code is AI‑generated.**
-- **All BAT is hand‑written.**
-
----
-
-## **Original Version (BAT Edition)**
+## **Original Version (BAT Module Edition)**
 
 ### **Adding Custom Commands**
 To create a new command:
@@ -20,7 +12,7 @@ To create a new command:
 3. Drop it into the commands folder  
 
 Example:  
-`SystemClean.bat` → appears as **system clean**
+`SystemClean.bat` → appears as **systemclean**
 
 This version is intentionally simple and extremely easy to extend.
 
